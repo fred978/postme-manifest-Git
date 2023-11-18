@@ -1,0 +1,53 @@
+.floating-button{
+
+z-index: 1000;
+
+position: fixed;
+
+bottom: 0;
+
+right: 0; 
+
+padding: 30px;
+}
+
+#main .card-wide{
+    width: var(--width);
+}
+
+:root {
+
+--primary: #0000FF;
+--dark-primary: #015798;
+--light-primary: #8104FA;
+--secondary: #FFEA00; 
+--dark-secondary: #FFAB00;
+--light-secondary: #FFF590; 
+--gray: #757575;
+--error: #ca3a41;
+--success: #00600f;
+--white: #FFF;
+--black: #000;
+--height: calc(100vh - 56px);
+--width: 100%;
+--fontFamily: "Roboto";
+}
+
+.floating-button {
+    z-index: 1000;
+}
+
+#modal-post-section{
+    display: none;
+    z-index: 1001;
+    position: fixed;
+    width: 100%;
+    min-height: 100vh;
+    overflow-y: auto;
+    bottom: 0;
+    top: 56px;
+    background: white;
+    text-align: center;
+    transform: translateY(100vh);
+    transition: transform .5s;
+}
